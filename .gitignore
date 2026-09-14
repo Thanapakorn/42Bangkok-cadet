@@ -1,0 +1,12 @@
+# C build files
+*.o
+*.out
+a.out
+
+# Editor / OS files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
