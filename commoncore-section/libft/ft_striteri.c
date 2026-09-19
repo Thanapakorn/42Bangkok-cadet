@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tchaiyas <tchaiyas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/19 02:25:27 by marvin            #+#    #+#             */
-/*   Updated: 2026/09/19 02:25:27 by marvin           ###   ########.fr       */
+/*   Created: 2026/09/19 02:25:27 by tchaiyas          #+#    #+#             */
+/*   Updated: 2026/09/19 15:58:35 by tchaiyas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	size_t	i;
 

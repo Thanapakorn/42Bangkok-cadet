@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tchaiyas <tchaiyas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/18 21:28:01 by marvin            #+#    #+#             */
-/*   Updated: 2026/09/18 21:28:01 by marvin           ###   ########.fr       */
+/*   Created: 2026/09/18 21:28:01 by tchaiyas          #+#    #+#             */
+/*   Updated: 2026/09/19 15:58:27 by tchaiyas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	is_delim(char ch, char c)
 static size_t	count_words(char const *s, char c)
 {
 	size_t	count;
-	int	in_word;
+	int		in_word;
 
 	count = 0;
 	in_word = 0;
@@ -30,7 +30,8 @@ static size_t	count_words(char const *s, char c)
 		{
 			in_word = 1;
 			count++;
-		}else if(is_delim(*s, c))
+		}
+		else if (is_delim(*s, c))
 			in_word = 0;
 		s++;
 	}
@@ -56,7 +57,7 @@ static char	get_word(char const *s, char c, size_t *i)
 
 static void	free_all(char **arr, size_t count)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (i < count)
@@ -77,7 +78,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	word_count = count_words(s, c);
-	result = (char **)malloc((word_count + 1) * (sizeof(char *)));
+	result = (char **) malloc((word_count + 1) * (sizeof(char *)));
 	if (!result)
 		return (NULL);
 	i = 0;

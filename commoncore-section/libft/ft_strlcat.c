@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tchaiyas <tchaiyas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/09 06:35:33 by marvin            #+#    #+#             */
-/*   Updated: 2026/09/09 06:35:33 by marvin           ###   ########.fr       */
+/*   Created: 2026/09/09 06:35:33 by tchaiyas          #+#    #+#             */
+/*   Updated: 2026/09/19 15:58:40 by tchaiyas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t  ft_strlcat(char *dest, const char *src, size_t s)
+size_t	ft_strlcat(char *dest, const char *src, size_t s)
 {
-	size_t  deslen;
-	size_t  srclen;
-	size_t  i;
-	
+	size_t	deslen;
+	size_t	srclen;
+	size_t	i;
+
 	deslen = 0;
 	srclen = 0;
 	i = 0;

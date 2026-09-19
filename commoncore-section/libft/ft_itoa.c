@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_ittao.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/19 00:27:09 by marvin            #+#    #+#             */
-/*   Updated: 2026/09/19 00:27:09 by marvin           ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_itoa.c                                         :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: tchaiyas <tchaiyas@student.42bangkok.com> #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/09/19 00:27:09 by tchaiyas         #+#    #+#              */
+/*   Updated: 2026/09/19 15:56:02 by tchaiyas        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,13 @@ char	*ft_itoa(int n)
 {
 	char	*str;
 	long	num;
-	int	len;
+	int		len;
 
 	num = 0;
 	len = ft_numlen(n);
 	if (num == 0)
 		len = 1;
-	str = (char *)malloc((len + 1) * sizeof(char));
+	str = (char *) malloc((len + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
 	str[len] = '\0';

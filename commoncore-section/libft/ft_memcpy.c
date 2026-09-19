@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/07 18:16:16 by tchaiyas          #+#    #+#             */
-/*   Updated: 2026/09/16 19:20:41 by marvin           ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_memcpy.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: tchaiyas <tchaiyas@student.42bangkok.com> #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/09/07 18:16:16 by tchaiyas         #+#    #+#              */
+/*   Updated: 2026/09/19 15:56:53 by tchaiyas        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
+		((unsigned char *) dest)[i] = ((unsigned char *) src)[i];
 		i++;
 	}
 	return (dest);

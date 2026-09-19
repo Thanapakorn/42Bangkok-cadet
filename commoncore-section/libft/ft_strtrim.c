@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tchaiyas <tchaiyas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/18 18:58:19 by marvin            #+#    #+#             */
-/*   Updated: 2026/09/18 18:58:19 by marvin           ###   ########.fr       */
+/*   Created: 2026/09/18 18:58:19 by tchaiyas          #+#    #+#             */
+/*   Updated: 2026/09/19 15:58:56 by tchaiyas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ static int	is_in_set(char c, char const *set)
 		i++;
 	}
 	return (0);
-	
 }
-char    *ft_strtrim(char const *s1, char const *set)
+
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
@@ -39,9 +39,9 @@ char    *ft_strtrim(char const *s1, char const *set)
 	while (s1[start] && is_in_set(s1[start], set))
 		start++;
 	end = ft_strlen(s1);
-	while (end > start && is_in_set(s1[end - 1],set))
+	while (end > start && is_in_set(s1[end - 1], set))
 		end--;
-	trimmed = (char *)malloc((end - start + 1) * sizeof(char));
+	trimmed = (char *) malloc((end - start + 1) * sizeof(char));
 	if (!trimmed)
 		return (NULL);
 	i = 0;
