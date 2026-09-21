@@ -6,7 +6,7 @@
 /*   By: tchaiyas <tchaiyas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/18 21:28:01 by tchaiyas          #+#    #+#             */
-/*   Updated: 2026/09/19 15:58:27 by tchaiyas         ###   ########.fr       */
+/*   Updated: 2026/09/19 19:54:29 by tchaiyas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static size_t	count_words(char const *s, char c)
 	return (count);
 }
 
-static char	get_word(char const *s, char c, size_t *i)
+static char	*get_word(char const *s, char c, size_t *i)
 {
 	size_t	start;
 	size_t	len;

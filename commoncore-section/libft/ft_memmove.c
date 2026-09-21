@@ -6,11 +6,11 @@
 /*   By: tchaiyas <tchaiyas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/07 19:00:12 by tchaiyas          #+#    #+#             */
-/*   Updated: 2026/09/19 17:00:37 by tchaiyas         ###   ########.fr       */
+/*   Updated: 2026/09/19 19:43:17 by tchaiyas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libdt.h"
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -24,7 +24,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (d < s)
 	{
 		while (n--)
-			d++ = s++;
+			*(d++) = *(s++);
 	}
 	else
 	{

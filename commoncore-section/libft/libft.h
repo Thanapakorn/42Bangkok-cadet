@@ -6,7 +6,7 @@
 /*   By: tchaiyas <tchaiyas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/19 15:59:21 by tchaiyas          #+#    #+#             */
-/*   Updated: 2026/09/19 16:48:09 by tchaiyas         ###   ########.fr       */
+/*   Updated: 2026/09/19 19:48:45 by tchaiyas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdint.h>
 
 typedef struct s_list
 {
